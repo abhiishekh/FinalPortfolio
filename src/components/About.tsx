@@ -16,7 +16,7 @@ const About = () => {
             This experience solidified my skills and confirmed my love for full-stack
         </p>
         <p className=" mb-5 text-lg w-full lg:w-[47rem] ">
-        I am particularly comfortable with <span className="font-semibold">React.js 14, TypeScript, Node.js,</span> and <span className="font-semibold">Tailwind CSS</span>.
+        I am particularly comfortable with <span className="font-semibold">React.js, TypeScript, Node.js,</span> and <span className="font-semibold">Tailwind CSS</span>.
          Currently, I am expanding my knowledge in  <span className="font-semibold">system design</span>.
          These skills and my continuous learning mindset are preparing me for my goal of becoming a full-time  <span className="font-semibold">full-stack developer</span>.
         </p>
