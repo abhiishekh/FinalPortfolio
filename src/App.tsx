@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
           <Skills/>
           <Projects/>
           <Contact/>
-          <hr className=' h-0.5 w-full bg-slate-500 mb-20 '/>
+          <hr className=' h-0.5 w-full bg-slate-500 mb-5 '/>
+          <Footer/>
      </main>
      
 

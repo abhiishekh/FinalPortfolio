@@ -7,3 +7,19 @@ html,body{
     scroll-padding-top: 100px;
     
 }
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .blinking-cursor {
+    display: inline-block;
+    width: 3px;           
+    height: 15px;          
+    border-radius: 40px;
+    background-color: rgb(131, 121, 121);
+    animation: blink 1s step-end infinite; 
+  }
+  

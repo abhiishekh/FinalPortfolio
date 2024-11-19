@@ -4,6 +4,7 @@ import abhishek from '../assets/abhishek.png'
 import { Icons } from './icons/Icons'
 import { MdArrowRightAlt } from "react-icons/md";
 import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
+import resume from '../assets/Abhishek.pdf'
 
 const Intro = () => {
   return (
@@ -16,8 +17,9 @@ const Intro = () => {
 
      <span className=' text-black-400 font-semibold'>Hello, </span>I’m a <span className=' text-black-400 font-semibold'>Full Stack MERN Developer.</span><br /> 
     I create <span className=' text-black-400 font-semibold'> modern</span>, <span className=' text-black-400 font-semibold'> Minimal</span>
-    , and <span className=' text-black-400 font-semibold'>secure websites</span><div className="br"></div>
-    My focus is on delivering <span className=' text-black-400 font-semibold'>high-quality</span>, and <span className=' text-black-400 font-semibold'>efficient code</span> 
+    , and <span className=' text-black-400 font-semibold'>secure websites</span>.<div className="br"></div>
+    My focus is on delivering <span className=' text-black-400 font-semibold'>high-quality</span>, and <span className=' text-black-400 font-semibold'>efficient code </span> 
+     <span className=' blinking-cursor md:h-5'></span>
         </div>
 
 <div className=' flex gap-4 items-center justify-center mt-4 flex-wrap flex-col md:flex-row'>
@@ -27,9 +29,11 @@ const Intro = () => {
     transform transition-transform duration-200 ease-in-out hover:scale-105
     '>
       Contact Me <MdArrowRightAlt/> </button> </a>
+
+      <a href={resume} download="Abhishek_resume.pdf">
     <button className=' bg-white px-4 py-2 border-spacing-1 rounded-full hover:cursor-pointer
      flex gap-4 items-center text-xl font-medium transform transition-transform duration-200 ease-in-out hover:scale-105'
-     >Download Resume <Icons/> </button>
+     >Download Resume <Icons/> </button></a>
     <div className='flex gap-4'>
 
     <a href="https://github.com/abhiishekh" target='/'>

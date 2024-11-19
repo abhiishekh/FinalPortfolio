@@ -24,9 +24,11 @@ const Projects = () => {
           </h6>
           <div className=' flex gap-4 mt-2'>
     <a href="https://www.abhishekmaurya.in/" target='/'>
-          <button className=' px-4 py-1 bg-live text-regular text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
-          <button className=' px-4 py-1 bg-white text-regular text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <a href="https://github.com/abhiishekh/FinalPortfolio" target='/'>
+          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          </a>
           </div>
         </div>
 
@@ -61,10 +63,10 @@ const Projects = () => {
           </h6>
           <div className=' flex gap-4 mt-2'>
           <a href="https://100xdevs-rosy.vercel.app/" target='/'>
-          <button className=' px-4 py-1 bg-live text-regular text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
           <a href="https://github.com/abhiishekh/100xdevs" target='/'>
-          <button className=' px-4 py-1 bg-white text-regular text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
           </a>
           </div>
         </div>
@@ -107,9 +109,11 @@ const Projects = () => {
           </h6>
           <div className=' flex gap-4 mt-2'>
           <a href=" https://course-selling-app-frontend-ten.vercel.app/" target='/'>
-          <button className=' px-4 py-1 bg-live text-regular text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-live  text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
-          <button className=' px-4 py-1 bg-white text-regular text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <a href="https://github.com/abhiishekh/CourseSellingApp-Frontend" target='/'>
+          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          </a>
           </div>
         </div>
 
@@ -145,10 +149,11 @@ const Projects = () => {
           </h6>
           <div className=' flex gap-4 mt-2'>
             <a href="https://trevelworld-ea9e8.web.app/home" target='/'>
-          <button className=' px-4 py-1 bg-live text-regular text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
-          <a href=""></a>
-          <button className=' px-4 py-1 bg-white text-regular text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <a href="https://github.com/abhiishekh/mern-travel-advisor" target='/'>
+          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          </a>
           </div>
         </div>
 
