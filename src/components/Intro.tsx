@@ -3,7 +3,7 @@ import { Icons } from './icons/Icons';
 import { MdArrowRightAlt } from "react-icons/md";
 import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 import react from '../assets/react.png';
-import javascript from '../assets/js.png';
+import js from '../assets/js.png';
 import typescript from '../assets/typescript.png';
 import vscode from '../assets/vs.png'
 import Gsap from '../assets/gsap.png'
@@ -93,14 +93,14 @@ const Intro = () => {
       </div>
 
       <div className=' overflow-hidden w-full mt-10'>
-        <div className=' icon flex items-center justify-center gap-20 '>
+        <div className=' icon flex items-center justify-center gap-10 lg:gap-20 w-full'>
           <img className =' w-10 h-10' src={vscode} alt="vscode" />
           <img className =' w-10 h-10' src={react} alt="react" />
-          <img className =' w-10 h-10' src={node} alt="node" />
+           <img className =' w-10 h-10' src={node} alt="node" />
           <img className =' w-10 h-10' src={tailwind} alt="tailwind" />
           <img className =' w-10 h-10' src={Gsap} alt="Gsap" />
           <img className =' w-10 h-10' src={html} alt="html" />
-          <img className =' w-10 h-10' src={javascript} alt="javascript" />
+          <img className =' w-10 h-10' src={js} alt="javascript" />
           <img className =' w-10 h-10' src={figma} alt="figma" />
           <img className =' w-10 h-10' src={typescript} alt="typescript" />
 
