@@ -18,7 +18,7 @@ import gsap from 'gsap';
 const Intro = () => {
 
   useGSAP(() => {
-    // Animating the image with up and down motion
+   
     gsap.fromTo('.intro-img', { y: 5 }, {
       y: -5,
       duration: 1,
@@ -28,7 +28,7 @@ const Intro = () => {
       ease: 'none',
     });
 
-    // Animating buttons with fade-in and margin-top
+   
     gsap.from('.intro-btn', {
       duration: 0.3,
       opacity: 0,
@@ -37,13 +37,13 @@ const Intro = () => {
       marginTop: "20px",
     });
 
-    // Create the marquee effect
+    
     gsap.fromTo('.icon',{xPercent:100}, {
-      xPercent: -100,  // Move the entire group of icons to the left by 100%
-      duration: 15,    // Duration for one complete loop
-      repeat: -1,      // Repeat infinitely
-      ease: 'linear',  // Smooth, constant speed
-      stagger: 0.5,    // Stagger the start time of the icons for a smoother effect
+      xPercent: -100,  
+      duration: 15,    
+      repeat: -1,     
+      ease: 'linear', 
+      stagger: 0.5,    
     });
   });
 
@@ -100,6 +100,7 @@ const Intro = () => {
           <img className =' w-10 h-10' src={tailwind} alt="tailwind" />
           <img className =' w-10 h-10' src={Gsap} alt="Gsap" />
           <img className =' w-10 h-10' src={html} alt="html" />
+          <img className =' w-10 h-10' src={javascript} alt="javascript" />
           <img className =' w-10 h-10' src={figma} alt="figma" />
           <img className =' w-10 h-10' src={typescript} alt="typescript" />
 
