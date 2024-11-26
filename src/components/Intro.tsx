@@ -14,8 +14,12 @@ import figma from '../assets/figma.png'
 import resume from '../assets/Abhishek.pdf';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+interface IntroProps {
+  darkmode: boolean;
+  
+}
 
-const Intro = () => {
+const Intro:React.FC<IntroProps> = ({darkmode}) => {
 
   useGSAP(() => {
    
@@ -45,6 +49,12 @@ const Intro = () => {
       ease: 'linear', 
       stagger: 0.5,    
     });
+    gsap.to('.icon img',{
+      rotate:-360,
+      duration:5,
+      ease:'none',
+      repeat:-1
+    })
   });
 
   return (
@@ -53,12 +63,12 @@ const Intro = () => {
         <img src={abhishek} alt="" className='h-full w-full' />
       </div>
 
-      <div>
-        <span className='text-black-400 font-semibold'>Hello, </span>
-        I’m a <span className='text-black-400 font-semibold'>Full Stack MERN Developer.</span><br />
-        I create <span className='text-black-400 font-semibold'>modern</span>, <span className='text-black-400 font-semibold'>Minimal</span>,
-        and <span className='text-black-400 font-semibold'>secure websites</span>.<div className="br"></div>
-        My focus is on delivering <span className='text-black-400 font-semibold'>high-quality</span>, and <span className='text-black-400 font-semibold'>efficient code </span>
+      <div className={darkmode?'text-white':'text-black'}>
+        <span className={ darkmode ? 'text-white font-semibold':'text-black font-semibold'}>Hello, </span>
+        I’m a <span className={ darkmode ? 'text-white font-semibold':'text-black font-semibold'}>Full Stack MERN Developer.</span><br />
+        I create <span className={ darkmode ? 'text-white font-semibold':'text-black font-semibold'}>modern</span>, <span className={ darkmode ? 'text-white font-semibold':'text-black font-semibold'}>Minimal</span>,
+        and <span className={ darkmode ? 'text-white font-semibold':'text-black font-semibold'}>secure websites</span>.<div className="br"></div>
+        My focus is on delivering <span className={ darkmode ? 'text-white font-semibold':'text-black font-semibold'}>high-quality</span>, and <span className={ darkmode ? 'text-white font-semibold':'text-black font-semibold'}>efficient code </span>
         <span className='blinking-cursor md:h-5'></span>
       </div>
 
@@ -94,15 +104,15 @@ const Intro = () => {
 
       <div className=' overflow-hidden w-full mt-10'>
         <div className=' icon flex items-center justify-center gap-10 lg:gap-20 w-full'>
-          <img className =' w-10 h-10' src={vscode} alt="vscode" />
-          <img className =' w-10 h-10' src={react} alt="react" />
-           <img className =' w-10 h-10' src={node} alt="node" />
-          <img className =' w-10 h-10' src={tailwind} alt="tailwind" />
-          <img className =' w-10 h-10' src={Gsap} alt="Gsap" />
-          <img className =' w-10 h-10' src={html} alt="html" />
-          <img className =' w-10 h-10' src={js} alt="javascript" />
-          <img className =' w-10 h-10' src={figma} alt="figma" />
-          <img className =' w-10 h-10' src={typescript} alt="typescript" />
+          <img className =' w-10 h-10 rounded-full' src={vscode} alt="vscode" />
+          <img className =' w-10 h-10 rounded-full' src={react} alt="react" />
+          <img className =' w-10 h-10 rounded-full' src={node} alt="node" />
+          <img className =' w-10 h-10 rounded-full' src={tailwind} alt="tailwind" />
+          <img className =' w-10 h-10 rounded-full' src={Gsap} alt="Gsap" />
+          <img className =' w-10 h-10 rounded-full' src={html} alt="html" />
+          <img className =' w-10 h-10 rounded-full' src={js} alt="javascript" />
+          <img className =' w-10 h-10 rounded-full' src={figma} alt="figma" />
+          <img className =' w-10 h-10 rounded-full' src={typescript} alt="typescript" />
 
 
         </div>

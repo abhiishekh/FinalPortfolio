@@ -6,10 +6,13 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { BsFillMoonStarsFill } from "react-icons/bs";
+
 
 const App = () => {
-  // State to hold the mouse position
+  
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [darkmode, setDarkMode] = useState(false)
 
 
   useEffect(() => {
@@ -39,24 +42,38 @@ const App = () => {
     
   };
 
+  const handledarkmode=()=>{
+    setDarkMode(!darkmode)
+  }
+
   return (
     <>
+    <div className={darkmode?'dark':''}>
       <div className="h-screen w-full fixed backdrop-blur-md pointer-events-none z-5 bg-red-200/20"></div>
-    <div className="bg-mainbg/60 w-full h-full flex items-center justify-center relative z-1">
+      <div className={`transition-all duration-300 ease-in-out ${darkmode ? 'dark:bg-gray-900' : 'bg-mainbg/60 text-black'} w-full h-full flex items-center justify-center relative z-1`}>
 
       <main className="h-full w-full mx-5 md:mx-20 lg:mx-32 2xl:mx-75 relative z-10">
 
-        <Nav />
-        <Intro />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Nav darkmode={darkmode}/>
+        <Intro darkmode={darkmode} />
+        <About darkmode={darkmode}/>
+        <Skills darkmode={darkmode}/>
+        <Projects darkmode={darkmode}/>
+        <Contact darkmode={darkmode}/>
         <hr className="h-0.5 w-full bg-slate-500 mb-5" />
         <Footer />
+        <div className=' flex items-center justify-end w-full bg-red-200 h-50'>
+
+        <div className='fixed bottom-5 left-72 right:0 md:left-96 flex items-center justify-center w-10 h-10 bg-white/60 rounded-full z-50'>
+           <BsFillMoonStarsFill onClick={handledarkmode}/>
+        </div>
+        </div>
       </main>
       <div style={cursorStyles}></div>
+      
     </div>
+    </div>
+   
     </>
   );
 };

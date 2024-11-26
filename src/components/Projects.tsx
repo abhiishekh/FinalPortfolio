@@ -6,12 +6,16 @@ import project3 from '../assets/courseSelling.png'
 import project4 from '../assets/travell.png'
 import { TbLivePhoto } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
+interface IntroProps {
+  darkmode: boolean;
+  
+}
 
 
-const Projects = () => {
+const Projects:React.FC<IntroProps> = ({darkmode}) => {
   return (
     <div className=" flex justify-center items-center flex-col w-full h-full mb-10"id='projects'>
-      <h1 className=" text-5xl font-semibold my-10">My Projects</h1>
+      <h1 className={ darkmode?'text-white text-5xl font-semibold my-10':'text-5xl font-semibold my-10'}>My Projects</h1>
         <section className=" grid grid-cols-1 md:grid-cols-2 gap-10">
 
         <div className="w-full">

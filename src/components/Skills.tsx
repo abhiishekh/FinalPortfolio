@@ -1,13 +1,17 @@
 // import React from 'react'
+interface IntroProps {
+    darkmode: boolean;
+    
+  }
 
-const Skills = () => {
+const Skills:React.FC<IntroProps> = ({darkmode}) => {
   return (
     <div className=" flex justify-center mb-10" id="skills">
         <div className=" text-center">
 
-      <h1 className=" text-5xl font-semibold mb-10">My Skills</h1>
+      <h1 className={darkmode?'text-white text-5xl font-semibold mb-10':"text-5xl font-semibold mb-10"}>My Skills</h1>
       <div className=" flex flex-col ">
-      <h3 className=" text-3xl font-medium mb-5">Frontend Technology</h3>
+      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>Frontend Technology</h3>
         <div className=" mb-10 lg:w-60*2 text-center mx-auto">
             <ul className=" flex flex-wrap gap-6 items-center justify-center">
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
@@ -42,7 +46,7 @@ const Skills = () => {
         </div>
       </div>
       <div className=" flex flex-col ">
-      <h3 className=" text-3xl font-medium mb-5">Backend Technology</h3>
+      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>Backend Technology</h3>
         <div className=" mb-10 lg:w-60*2 text-center mx-auto" >
             <ul className=" flex flex-wrap gap-6 items-center justify-center">
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
@@ -63,7 +67,7 @@ const Skills = () => {
         </div>
       </div>
       <div className=" flex flex-col ">
-      <h3 className=" text-3xl font-medium mb-5">Database & ORM</h3>
+      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>Database & ORM</h3>
         <div className=" mb-10 lg:w-60*2 text-center mx-auto">
             <ul className=" flex flex-wrap gap-6 items-center justify-center">
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
@@ -84,7 +88,7 @@ const Skills = () => {
         </div>
       </div>
       <div className=" flex flex-col ">
-      <h3 className=" text-3xl font-medium mb-5">DevOps & Tools</h3>
+      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>DevOps & Tools</h3>
         <div className=" mb-10 lg:w-60*2 text-center mx-auto">
             <ul className=" flex flex-wrap gap-6 items-center justify-center">
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
