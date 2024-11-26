@@ -12,7 +12,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 const App = () => {
   
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [darkmode, setDarkMode] = useState(false)
+  const [darkmode, setDarkMode] = useState(true)
 
 
   useEffect(() => {
@@ -51,9 +51,9 @@ const App = () => {
     <div className={darkmode?'dark':''}>
       <div className="h-screen w-full fixed backdrop-blur-md pointer-events-none z-5 bg-red-200/20"></div>
       <div className={`transition-all duration-300 ease-in-out ${darkmode ? 
-        'dark:bg-gray-900' : 'bg-mainbg/60 text-black'} w-full h-full flex items-center justify-center relative z-1 overflow-x-hidden`}>
+        'dark:bg-gray-900' : 'bg-mainbg/60 text-black'} w-full h-full flex items-center justify-center relative z-1 `}>
 
-      <main className="h-full w-full mx-5 md:mx-20 lg:mx-32 2xl:mx-75 relative z-10 overflow-x-hidden">
+      <main className="h-full w-full mx-5 md:mx-20 lg:mx-32 2xl:mx-75 relative z-10 ">
 
         <Nav darkmode={darkmode}/>
         <Intro darkmode={darkmode} />
@@ -65,7 +65,7 @@ const App = () => {
         <Footer />
         <div className=' flex items-center justify-end w-full bg-red-200 h-50'>
 
-        <div className='fixed bottom-5 right-[1rem] md:right-[3rem]  flex items-center justify-center w-10 h-10 bg-white/60 rounded-full z-50'>
+        <div className='fixed bottom-5 right-[2.5rem] md:right-[3rem]  flex items-center justify-center w-10 h-10 bg-white/60 rounded-full z-50'>
            <BsFillMoonStarsFill onClick={handledarkmode}/>
         </div>
         </div>
