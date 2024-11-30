@@ -67,7 +67,7 @@ const Skills:React.FC<IntroProps> = ({darkmode}) => {
         </div>
       </div>
       <div className=" flex flex-col ">
-      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>Database & ORM</h3>
+      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>Database</h3>
         <div className=" mb-10 lg:w-60*2 text-center mx-auto">
             <ul className=" flex flex-wrap gap-6 items-center justify-center">
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
@@ -76,9 +76,9 @@ const Skills:React.FC<IntroProps> = ({darkmode}) => {
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
                     <p>MySQL</p>
                 </li>
-                <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
+                {/* <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
                     <p>PostgreSQL</p>
-                </li>
+                </li> */}
                 {/* <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
                     <p>Redis</p>
                 </li> */}
@@ -88,7 +88,7 @@ const Skills:React.FC<IntroProps> = ({darkmode}) => {
         </div>
       </div>
       <div className=" flex flex-col ">
-      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>DevOps & Tools</h3>
+      <h3 className={darkmode?"text-white text-3xl font-medium mb-5":"text-3xl font-medium mb-5"}>Supportive Tools</h3>
         <div className=" mb-10 lg:w-60*2 text-center mx-auto">
             <ul className=" flex flex-wrap gap-6 items-center justify-center">
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
