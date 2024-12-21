@@ -2,6 +2,7 @@
 
 import project2 from '../assets/live100xdevs.png';
 import project1 from '../assets/portfolio.png'
+//changes made
 // import project3 from '../assets/courseSelling.png'
 import project4 from '../assets/travell.png'
 import project5 from '../assets/ecommerce.png'
