@@ -2,7 +2,7 @@
 
 import project2 from '../assets/live100xdevs.png';
 import project1 from '../assets/portfolio.png'
-import project3 from '../assets/courseSelling.png'
+// import project3 from '../assets/courseSelling.png'
 import project4 from '../assets/travell.png'
 import project5 from '../assets/ecommerce.png'
 import { TbLivePhoto } from "react-icons/tb";
