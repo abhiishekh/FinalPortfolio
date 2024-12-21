@@ -4,6 +4,7 @@ import project2 from '../assets/live100xdevs.png';
 import project1 from '../assets/portfolio.png'
 import project3 from '../assets/courseSelling.png'
 import project4 from '../assets/travell.png'
+import project5 from '../assets/ecommerce.png'
 import { TbLivePhoto } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 interface IntroProps {
@@ -20,10 +21,56 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
 
         <div className="w-full">
       <div className="w-full h-auto bg-gray-100 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
+        <img className="w-full h-1/2 object-cover" src={project5} alt="Travel Advisor" />
+        <div className="p-2">
+          <h3 className="text-black font-bold text-xl">IPL Shopping</h3>
+          <h6 className="text-sm text-gray-600 font-medium">
+            This is a responsive and user-friendly, fully functional E-Commerce platform deployed on vercel.
+            The purpose of this project is to provide users ipl products with a seamless online shopping experience.
+          </h6>
+          <div className=' flex gap-4 mt-2'>
+    <a href="https://shopping-chi-seven.vercel.app/" target='/'>
+          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          </a>
+          <a href="https://github.com/abhiishekh/E-commerce" target='/'>
+          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          </a>
+          </div>
+        </div>
+
+        <div className="my-5 ml-2 mr-2 lg:w-60*2 text-center mx-auto">
+          <ul className="flex flex-wrap gap-3">
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>React</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>NodeJs</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>MongoDB</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>Tailwind</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>Gsap</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>TypeScript</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>React-Icons</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        <div className="w-full">
+      <div className="w-full h-auto bg-gray-100 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
         <img className="w-full h-1/2 object-cover" src={project1} alt="Travel Advisor" />
         <div className="p-2">
           <h3 className="text-black font-bold text-xl">Personal Portfolio</h3>
-          <h6 className="text-sm text-gray-400 font-medium">
+          <h6 className="text-sm text-gray-600 font-medium">
             A portfolio website to showcase my skills & projects. 
           </h6>
           <div className=' flex gap-4 mt-2'>
@@ -62,7 +109,7 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
         <img className="w-full h-1/2 object-cover" src={project2} alt="Travel Advisor" />
         <div className="p-2">
           <h3 className="text-black font-bold text-xl">100xDevs Clone</h3>
-          <h6 className="text-sm text-gray-400 font-medium">
+          <h6 className="text-sm text-gray-600 font-medium">
             Build and deployed the 100xDevs website from scratch. It has functionality to purchase the course and see the purchased courses.
           </h6>
           <div className=' flex gap-4 mt-2'>
@@ -104,10 +151,46 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
     </div>
     <div className="w-full">
       <div className="w-full h-auto bg-gray-100 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
+        <img className="w-full h-1/2 object-cover" src={project4} alt="Travel Advisor" />
+        <div className="p-2">
+          <h3 className="text-black font-bold text-xl">Travel Advisor</h3>
+          <h6 className="text-sm text-gray-600 font-medium">
+            Created a Featured fulled React website from scratch. A user can search the location and explore about the place and visit the nearby hotels. 
+
+          </h6>
+          <div className=' flex gap-4 mt-2'>
+            <a href="https://trevelworld-ea9e8.web.app/home" target='/'>
+          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          </a>
+          <a href="https://github.com/abhiishekh/mern-travel-advisor" target='/'>
+          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          </a>
+          </div>
+        </div>
+
+        <div className="my-5 ml-2 mr-2 lg:w-60*2 text-center mx-auto">
+          <ul className="flex flex-wrap gap-3">
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>React</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>API</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>React-Navigation</p>
+            </li>
+          
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+    {/* <div className="w-full">
+      <div className="w-full h-auto bg-gray-100 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
         <img className="w-full h-1/2 object-cover" src={project3} alt="Travel Advisor" />
         <div className="p-2">
           <h3 className="text-black font-bold text-xl">Course Selling App</h3>
-          <h6 className="text-sm text-gray-400 font-medium">
+          <h6 className="text-sm text-gray-600 font-medium">
             Created and deployed a full stack MERN website for selling coursses. A place where tutor come and create the courses and list for selling. They can publish/unpublish the coursses whenever they want.
 
           </h6>
@@ -141,43 +224,8 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
           </ul>
         </div>
       </div>
-    </div>
-    <div className="w-full">
-      <div className="w-full h-auto bg-gray-100 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
-        <img className="w-full h-1/2 object-cover" src={project4} alt="Travel Advisor" />
-        <div className="p-2">
-          <h3 className="text-black font-bold text-xl">Travel Advisor</h3>
-          <h6 className="text-sm text-gray-400 font-medium">
-            Created a Featured fulled React website from scratch. A user can search the location and explore about the place and visit the nearby hotels. 
-
-          </h6>
-          <div className=' flex gap-4 mt-2'>
-            <a href="https://trevelworld-ea9e8.web.app/home" target='/'>
-          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
-          </a>
-          <a href="https://github.com/abhiishekh/mern-travel-advisor" target='/'>
-          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
-          </a>
-          </div>
-        </div>
-
-        <div className="my-5 ml-2 mr-2 lg:w-60*2 text-center mx-auto">
-          <ul className="flex flex-wrap gap-3">
-            <li className="font-regular px-4 py-1 bg-white rounded-lg">
-              <p>React</p>
-            </li>
-            <li className="font-regular px-4 py-1 bg-white rounded-lg">
-              <p>API</p>
-            </li>
-            <li className="font-regular px-4 py-1 bg-white rounded-lg">
-              <p>React-Navigation</p>
-            </li>
-          
-           
-          </ul>
-        </div>
-      </div>
-    </div>
+    </div> */}
+    
    
 
         </section>  
