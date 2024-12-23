@@ -34,7 +34,8 @@ const Contact: React.FC<ContactProps> = ({ darkmode }) => {
     <div className={`${darkmode ? 'text-white' : ''} my-20 flex items-center justify-center flex-col font-semibold`} id="contact">
       <h1 className={`${darkmode ? "text-white" : ""} text-5xl font-semibold mb-10`}>Contact Me</h1>
       <p className="text-center mb-10">
-        You can directly contact me here
+        You can directly contact me here 
+        <br />
         <span className={`${darkmode ? 'text-white' : ''} text-black font-medium`}>
           abhishekmaurya.webdev@gmail.com
         </span>
