@@ -2,10 +2,9 @@
 
 import project2 from '../assets/live100xdevs.png';
 import project1 from '../assets/portfolio.png'
-//changes made
-// import project3 from '../assets/courseSelling.png'
 import project4 from '../assets/travell.png'
 import project5 from '../assets/ecommerce.png'
+import project6 from '../assets/translator.png'
 import { TbLivePhoto } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 interface IntroProps {
@@ -24,17 +23,17 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
       <div className="w-full h-auto bg-gray-100 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
         <img className="w-full h-1/2 object-cover" src={project5} alt="Travel Advisor" />
         <div className="p-2">
-          <h3 className="text-black font-bold text-xl">IPL Shopping</h3>
+          <h3 className="text-black font-bold text-xl">Shoppi!</h3>
           <h6 className="text-sm text-gray-600 font-medium">
             This is a responsive and user-friendly, fully functional E-Commerce platform deployed on vercel.
-            The purpose of this project is to provide users ipl products with a seamless online shopping experience.
+            The purpose of this project is to provide users premium products with a seamless online shopping experience.
           </h6>
           <div className=' flex gap-4 mt-2'>
     <a href="https://shopping-chi-seven.vercel.app/" target='/'>
-          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-blue-700 text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
           <a href="https://github.com/abhiishekh/E-commerce" target='/'>
-          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <button className=' p-2 bg-white text-lg text-blue-700 rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
           </a>
           </div>
         </div>
@@ -76,10 +75,10 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
           </h6>
           <div className=' flex gap-4 mt-2'>
     <a href="https://www.abhishekmaurya.in/" target='/'>
-          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-blue-700 text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
           <a href="https://github.com/abhiishekh/FinalPortfolio" target='/'>
-          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <button className=' p-2 bg-white text-lg text-blue-700 rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
           </a>
           </div>
         </div>
@@ -115,10 +114,10 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
           </h6>
           <div className=' flex gap-4 mt-2'>
           <a href="https://100xdevs-rosy.vercel.app/" target='/'>
-          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-blue-700 text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
           <a href="https://github.com/abhiishekh/100xdevs" target='/'>
-          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <button className=' p-2 bg-white text-lg text-blue-700 rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
           </a>
           </div>
         </div>
@@ -161,10 +160,10 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
           </h6>
           <div className=' flex gap-4 mt-2'>
             <a href="https://trevelworld-ea9e8.web.app/home" target='/'>
-          <button className=' p-2 bg-live text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+          <button className=' p-2 bg-blue-700 text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
           <a href="https://github.com/abhiishekh/mern-travel-advisor" target='/'>
-          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <button className=' p-2 bg-white text-lg text-blue-700 rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
           </a>
           </div>
         </div>
@@ -186,21 +185,21 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
         </div>
       </div>
     </div>
-    {/* <div className="w-full">
+    <div className="w-full">
       <div className="w-full h-auto bg-gray-100 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
-        <img className="w-full h-1/2 object-cover" src={project3} alt="Travel Advisor" />
+        <img className="w-full h-1/2 object-cover" src={project6} alt="Travel Advisor" />
         <div className="p-2">
-          <h3 className="text-black font-bold text-xl">Course Selling App</h3>
+          <h3 className="text-black font-bold text-xl">Translator App</h3>
           <h6 className="text-sm text-gray-600 font-medium">
-            Created and deployed a full stack MERN website for selling coursses. A place where tutor come and create the courses and list for selling. They can publish/unpublish the coursses whenever they want.
+          Built a cross-platform translation app with MERN stack and Google Translate API, enabling seamless communication across languages.
 
           </h6>
           <div className=' flex gap-4 mt-2'>
-          <a href=" https://course-selling-app-frontend-ten.vercel.app/" target='/'>
-          <button className=' p-2 bg-live  text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
+            <a href="https://translator-mern-app-vryj.vercel.app/" target='/'>
+          <button className=' p-2 bg-blue-700 text-lg text-white rounded-md flex gap-2 items-center'>Live Demo <TbLivePhoto/></button>
           </a>
-          <a href="https://github.com/abhiishekh/CourseSellingApp-Frontend" target='/'>
-          <button className=' p-2 bg-white text-lg text-live rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
+          <a href="https://github.com/abhiishekh/Translator-Mern-App" target='/'>
+          <button className=' p-2 bg-white text-lg text-blue-700 rounded-md flex gap-2 items-center'><FaGithub/>View Source</button>
           </a>
           </div>
         </div>
@@ -211,21 +210,24 @@ const Projects:React.FC<IntroProps> = ({darkmode}) => {
               <p>React</p>
             </li>
             <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>API</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
+              <p>React-Navigation</p>
+            </li>
+            <li className="font-regular px-4 py-1 bg-white rounded-lg">
               <p>NodeJs</p>
             </li>
             <li className="font-regular px-4 py-1 bg-white rounded-lg">
-              <p>REST API</p>
+              <p>Google API</p>
             </li>
-            <li className="font-regular px-4 py-1 bg-white rounded-lg">
-              <p>ExpressJs</p>
-            </li>
-            <li className="font-regular px-4 py-1 bg-white rounded-lg">
-              <p>Postman</p>
-            </li>
+          
+           
           </ul>
         </div>
       </div>
-    </div> */}
+    </div>
+    
     
    
 

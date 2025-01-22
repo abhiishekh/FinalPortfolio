@@ -30,10 +30,13 @@ const Skills:React.FC<IntroProps> = ({darkmode}) => {
                     <p>TypeScript</p>
                 </li>
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
-                    <p>React</p>
+                    <p>ReactJs</p>
                 </li>
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
-                    <p>TailWind</p>
+                    <p>NextJs</p>
+                </li>
+                <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
+                    <p>TailWindCss</p>
                 </li>
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
                     <p>Gsap</p>
@@ -76,12 +79,7 @@ const Skills:React.FC<IntroProps> = ({darkmode}) => {
                 <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
                     <p>MySQL</p>
                 </li>
-                {/* <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
-                    <p>PostgreSQL</p>
-                </li> */}
-                {/* <li className=" font-semibold px-6 py-2 bg-white rounded-full transform transition-transform duration-200 ease-in-out hover:scale-110">
-                    <p>Redis</p>
-                </li> */}
+               
                
                 
             </ul>
