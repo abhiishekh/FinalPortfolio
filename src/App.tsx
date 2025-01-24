@@ -14,7 +14,7 @@ const App = () => {
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [darkmode, setDarkMode] = useState(true)
-  const { scrollXProgress , scrollYProgress } = useScroll()
+  const { scrollYProgress } = useScroll()
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
