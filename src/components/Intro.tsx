@@ -102,7 +102,12 @@ const Intro:React.FC<IntroProps> = ({darkmode}) => {
         </div>
       </div>
 
-      <div className=' overflow-hidden w-full mt-10'>
+      <div className=' overflow-hidden w-full mt-10 '>
+      <div className="absolute w-full h-10 z-10 bg-black" style={{
+  maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%)",
+  WebkitMaskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%)"
+}}></div>
+
         <div className=' icon flex items-center justify-center gap-10 lg:gap-20 w-full'>
           <img className =' w-10 h-10 rounded-full' src={vscode} alt="vscode" />
           <img className =' w-10 h-10 rounded-full' src={react} alt="react" />

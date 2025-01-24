@@ -8,8 +8,8 @@ interface IntroProps {
 const Nav:React.FC<IntroProps> = ({darkmode}) => {
   useGSAP(() => {
     gsap.from('.nav-item', {
-      y:30,
-      duration: 0.8,
+      x:30,
+      duration: 0.6,
       stagger: 0.2,
       opacity: 0,
       delay:1
