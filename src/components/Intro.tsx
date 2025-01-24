@@ -103,7 +103,7 @@ const Intro:React.FC<IntroProps> = ({darkmode}) => {
       </div>
 
       <div className=' overflow-hidden w-full mt-10 '>
-      <div className="absolute w-full h-10 z-10 bg-black" style={{
+      <div className={`absolute w-full h-10 z-10 ${darkmode?'bg-black':'bg-mainbg/60'}`} style={{
   maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%)",
   WebkitMaskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%)"
 }}></div>
