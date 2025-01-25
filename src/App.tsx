@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { motion, useScroll } from 'motion/react';
+import { BackgroundBeams } from './components/ui/background-beams';
 
 
 const App = () => {
@@ -51,6 +52,7 @@ const App = () => {
     <>
 
       <div className={darkmode ? 'dark' : ''}>
+        <BackgroundBeams className='z-10 top-0 absolute'/>
         <div className="h-screen w-full fixed backdrop-blur-md pointer-events-none z-5 bg-red-200/20"></div>
         <div className={`transition-all duration-300 ease-in-out ${darkmode ?
           'dark:bg-black' : 'bg-mainbg/60 text-black'} w-full h-full flex items-center justify-center relative z-1 `}>
@@ -60,7 +62,6 @@ const App = () => {
                  >
           </motion.div>
           <main className="h-full w-full mx-5 md:mx-20 lg:mx-32 2xl:mx-75 relative z-10 ">
-
             <Nav darkmode={darkmode} />
             <Intro darkmode={darkmode} />
             <About darkmode={darkmode} />
