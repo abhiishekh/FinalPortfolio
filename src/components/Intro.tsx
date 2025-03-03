@@ -1,4 +1,4 @@
-import abhishek from '../assets/abhishek.png';
+// import abhishek from '../assets/abhishek.png';
 import { Icons } from './icons/Icons';
 import { MdArrowRightAlt } from "react-icons/md";
 import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
@@ -58,9 +58,9 @@ const Intro:React.FC<IntroProps> = ({darkmode}) => {
   });
 
   return (
-    <div className='relative w-full h-auto text-lg text-center my-32 2xl:my-60 leading-8 md:text-3xl md:leading-10' id='home'>
+    <div className='relative w-full h-auto text-lg text-center my-32 2xl:my-60 leading-8 md:text-3xl md:leading-10 font-relinnslight tracking-wide' id='home'>
       <div className='intro-img w-32 h-32 rounded-full overflow-hidden mb-10 mx-auto shadow-lg shadow-white border-4 border-white'>
-        <img src={abhishek} alt="" className='h-full w-full' />
+        <img src="https://res.cloudinary.com/dhac6t2n1/image/upload/v1740991131/MY_Image_mlzqwt.png" alt="abhishek" className='h-full w-full' />
       </div>
 
       <div className={darkmode?'text-white':'text-black'}>
@@ -103,7 +103,7 @@ const Intro:React.FC<IntroProps> = ({darkmode}) => {
       </div>
 
       <div className=' overflow-hidden w-full mt-10 '>
-      <div className={`absolute w-full h-10 z-10 ${darkmode?'bg-black':'bg-mainbg/60'}`} style={{
+      <div className={`absolute w-full h-10 z-10 ${darkmode?'bg-black':'bg-[#EBEEFF]/60'}`} style={{
   maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%)",
   WebkitMaskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%)"
 }}></div>

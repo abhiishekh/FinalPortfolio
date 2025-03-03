@@ -13,6 +13,23 @@ html,body{
       opacity: 0;
     }
   }
+  @font-face {
+    font-family:'Matter-Light';
+    src: url('/fonts/Matter-Light.ttf') format('truetype');
+  }
+  @font-face {
+    font-family:'Matter-LightItalic';
+    src: url('/fonts/Matter-LightItalic.ttf') format('truetype');
+  }
+  @font-face {
+    font-family:'Matter-Medium';
+    src: url('/fonts/Matter-Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family:'Matter-SemiBold';
+    src: url('/fonts/Matter-SemiBold.ttf') format('truetype');
+  }
+  
   
   .blinking-cursor {
     display: inline-block;

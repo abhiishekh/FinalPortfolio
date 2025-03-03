@@ -9,6 +9,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        relinnsLight: ["Matter-Light", "sans-serif"],
+        relinnsMedium: ["Matter-Medium", "sans-serif"], 
+        relinnsSemibold: ["Matter-SemiBold", "sans-serif"], 
+        relinnsLightitalic: ["Matter-LightItalic", "sans-serif"], 
+      },
       colors:{
         mainbg:'#DEE3FF',
         live:'#747FE0'
@@ -28,7 +34,7 @@ export default {
   plugins: [addVariablesForColors],
   plugins: [],
 }
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
